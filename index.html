@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.google.com/specimen/Space+Mono" rel="stylesheet">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <div class="calculator">
+
+      <div class="bill">
+      <p>Bill</p>
+        <form>
+          <input type="number" placeholder="0" id="Inputbill" class="bill-input" >
+          <img src="images/icon-dollar.svg" alt="">
+        </form>
+       
+      
+      </div>
+
+      <div class="percentages">
+        <p>  Select Tip % </p>
+        <div class="table-tip">
+          <div class="tips tip-5">5%</div>
+          <div class="tips tip-10">10%</div>
+          <div class="tips tip-15 active-tip">15%</div>
+          <div class="tips tip-25">25%</div>
+          <div class="tips tip-50">50%</div>
+
+            <input type="number" placeholder=" Custom" id="tip-custom" >
+        </div>
+       
+        
+      </div>
+
+      <div class="people"> 
+        <div class="people_text">
+          <label for=""> Number of People</label> 
+          <label for="" class="error">can't be zero</label></div>
+        <form >
+          <input type="number"  placeholder="0" id="InputPeople" class="people-input">
+          <img src="images/icon-person.svg" alt="">
+        </form>
+      </div>
+
+    </div>
+
+    <div class="screen">
+      <div class="tip">
+        <div class="tip_text">Tip Amount <br>
+         <p>/person</p> </div> 
+            <div class="cash_tip" id="tip-amount">$23.00</div>
+      </div>
+
+      <div class="total">  
+        <div class="total_text">  Total <br>
+        <p>/person</p></div>
+          <div class="cash_total" id="total-amount">$5.00</div>
+      </div>
+
+      <div class="reset">RESET</div>
+    </div>
+
+    <script src="app.js"></script>
+  </main>
+ 
+</body>
+</html>

@@ -1,0 +1,214 @@
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+font-weight: 900;
+color: #4E7071;
+}
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #C5E4E7;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 650px;
+    height: 300px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    align-items: center;
+    font-family:monospace;
+    
+}
+
+.container .calculator{
+    background-color: #FFFFFF;
+    width: 46%;
+    height: 90%;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.container .screen{
+    background-color: #00474B;
+    width: 46%;
+    height: 90%;
+    border-radius: 20px;
+    margin:auto;
+    
+}
+
+.container .calculator .bill{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.container .calculator .bill input{
+    text-align: end;
+    height: 30px;
+    width: 100%;
+    
+}
+
+.container .calculator .bill img{
+    position: absolute;
+    left: 2%;
+    bottom: 8px;
+}
+
+.container .calculator .bill  input:hover{
+    cursor: pointer;
+}
+
+.container .calculator .bill  input:focus{
+border-top: 4px solid #28C1AC;
+border-left: 4px solid #28C1AC;
+border-right: 4px solid #28C1AC;
+border-bottom: 4px solid #28C1AC;
+}
+
+.container .calculator .percentages .table-tip{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,30px);
+    grid-gap: 20px;
+}
+
+.container .calculator .percentages .table-tip div{
+    font-size: 16px;
+    padding: 7px 0 9px 0;
+    text-align: center;
+    background-color: #00474B;
+    color: #FFFFFF;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.container .calculator .percentages .table-tip div:hover{
+    cursor: pointer;
+    background-color: #2FBCA8;
+    color: #27706A;
+}
+
+.container .calculator .percentages .table-tip div:focus{
+    background-color: #2FBCA8;
+    color: #27706A;
+}
+
+.container .calculator .percentages .table-tip  input{
+width: 80px; 
+height: 30px;
+justify-content: center;
+}
+.container .calculator .people .people_text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .calculator .people .people_text .error{
+    color: red;
+    display: none;
+}
+
+.container .calculator .people{
+    margin-top: 30px;
+    position: relative;
+    
+}
+.container .calculator .people img{
+    position: absolute;
+    left: 2%;
+    bottom: 8px;
+}
+
+.container .calculator .people input{
+    text-align: end;
+    height: 30px;
+    width: 100%;
+    
+}
+.container .screen {
+    display: flex; 
+    flex-direction: column;
+}
+.container .screen .tip{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+}
+.container .screen .total{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    
+}
+.container .screen .tip .tip_text {
+    color: #FFFFFF;
+
+}
+.container .screen .total .total_text{
+    color: #FFFFFF;
+
+}
+
+ .container .screen .tip{
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+ }
+ .container .screen .total{
+    margin-left: 20px;
+    margin-bottom: 80px;
+    margin-right: 20px;
+    justify-content: space-between;
+ }
+
+.container .screen .tip .cash_tip{
+    font-size: 30px;
+    color: #2FBCA8;   
+}
+
+.container .screen .total .cash_total{
+    font-size: 30px;
+    color: #2FBCA8;
+}
+
+.container .screen .reset{
+    background-color: #2FBCA8;
+    color: #00474B;
+    text-align: center;
+    padding: 7px 0 9px 0;
+    border-radius: 5px;
+    font-size: 20px;
+    border-style: none;
+    width: 80%;
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width:700px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 90%;
+    }
+    .container .calculator{
+        margin-top: 20px;
+        width: 80%;
+    }
+    .container .screen{
+        width: 90%;
+        height: 60%;
+        margin-bottom: 20 px;
+    }
+}
+
